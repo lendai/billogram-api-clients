@@ -10,7 +10,7 @@ password = 'myPassword'
 atlas = AtlasClient.new( api_id: api_id, password: password)
 
 # Create a new invoice
-new_invoice = atlas.sendInvoice(
+new_invoice = atlas.createInvoice(
     invoice_date: '2011-11-18',
     due_days: 30,
     customer_no: 1,
