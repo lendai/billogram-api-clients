@@ -9,7 +9,7 @@ class AtlasClient
 
     private static $_apiId = "4e8eddb37cff852384e8eddb37d019"; /* Set the apiId to your Atlas Express API ID */
     private static $_apiPassword = "myPassword"; /* Set the apiPassword to your Atlas Express API password */
-    private static $_apiHost = "http://api.atlasexpress.se"; /* Set to https://sandbox.atlasexpress.se for testing */
+    private static $_apiHost = "https://api.atlasexpress.se"; /* Set to https://sandbox.atlasexpress.se for testing */
 
     private static function _request($url, $request = "GET", $params = null)
     {
