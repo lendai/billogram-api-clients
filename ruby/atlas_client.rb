@@ -1,4 +1,4 @@
-# Ruby class for Atlas Express REST API
+# Ruby class for Atlas Invoice REST API
 # Author: Daniel Mauno Pettersson at Agigen http://agigen.se/
 
 class AtlasClient
@@ -8,7 +8,7 @@ class AtlasClient
   require 'cgi'
 
   def initialize(params = {})
-    @base_url = "https://api.atlasexpress.se/"
+    @base_url = "https://api.atlasinvoice.se/"
     @username = params[:api_id]
     @password = params[:password]
   end

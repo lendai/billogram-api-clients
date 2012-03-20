@@ -1,4 +1,4 @@
-#Python class for Atlas Express REST API, author: Andreas Högström at Agigen http://agigen.se/
+#Python class for Atlas Invoice REST API, author: Andreas Högström at Agigen http://agigen.se/
 #encoding=utf-8
 import json
 from urllib import quote_plus

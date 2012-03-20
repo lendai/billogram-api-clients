@@ -3,7 +3,7 @@
 include_once('AtlasClient.php');
 
 /**
-  * Callback script for the Atlas Express REST API using the PHP helper class.
+  * Callback script for the Atlas Invoice REST API using the PHP helper class.
   * @author Carl Oscar Aaro at Agigen http://agigen.se/
   */
 

@@ -3,13 +3,13 @@
 class AtlasClient
 {
     /**
-      * @description PHP class for Atlas Express REST API
+      * @description PHP class for Atlas Invoice REST API
       * @author Carl Oscar Aaro at Agigen http://agigen.se/
       */
 
-    private static $_apiId = "4e8eddb37cff852384e8eddb37d019"; /* Set the apiId to your Atlas Express API ID */
-    private static $_apiPassword = "myPassword"; /* Set the apiPassword to your Atlas Express API password */
-    private static $_apiHost = "https://api.atlasexpress.se"; /* Set to https://sandbox.atlasexpress.se for testing */
+    private static $_apiId = "4e8eddb37cff852384e8eddb37d019"; /* Set the apiId to your Atlas Invoice API ID */
+    private static $_apiPassword = "myPassword"; /* Set the apiPassword to your Atlas Invoice API password */
+    private static $_apiHost = "https://api.atlasinvoice.se"; /* Set to https://sandbox.atlasinvoice.se for testing */
 
     private static function _request($url, $request = "GET", $params = null)
     {
