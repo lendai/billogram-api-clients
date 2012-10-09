@@ -31,6 +31,9 @@ class AtlasClient
                 $url .= "?" . $params;
         }
 
+        if ($request == "POST")
+            $streamParams['http']['header'] .= "Content-Type: application/x-www-form-urlencoded" . "\r\n";
+
         $context = stream_context_create($streamParams);
         $fp = fopen($url, "rb", false, $context);
         if (!$fp)
