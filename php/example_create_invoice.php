@@ -1,6 +1,6 @@
 <?php
 
-include_once('AtlasClient.php');
+include_once('BillogramClient.php');
 
 /**
   * This code will create and send an invoice to the customer Testcompany AB.
@@ -32,4 +32,4 @@ $data = array(
     'callback' => 'https://mywebshop.example.org/example_callback_notify.php',
     'event' => 'send',
 );
-$invoice = AtlasClient::createInvoice($data);
+$invoice = BillogramClient::createInvoice($data);

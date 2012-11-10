@@ -1,14 +1,14 @@
-# Ruby class for Atlas Invoice REST API
+# Ruby class for Billogram REST API
 # Author: Daniel Mauno Pettersson at Agigen http://agigen.se/
 
-class AtlasClient
+class BillogramClient
   require "net/https"
   require "uri"
   require 'json'
   require 'cgi'
 
   def initialize(params = {})
-    @base_url = "https://api.atlasinvoice.se/"
+    @base_url = "https://api.billogram.com/"
     @username = params[:api_id]
     @password = params[:password]
   end

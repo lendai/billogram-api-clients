@@ -1,11 +1,11 @@
-#Python class for Atlas Invoice REST API, author: Andreas Högström at Agigen http://agigen.se/
+#Python class for Billogram REST API, author: Andreas Högström at Agigen http://agigen.se/
 #encoding=utf-8
 import json
 from urllib import quote_plus
 import urllib2
 import base64
 
-class AtlasClient(object):
+class BillogramClient(object):
     def __init__(self,host,apiId,apiPassword):
         self.host = host
         self.apiId = apiId
@@ -17,7 +17,7 @@ class AtlasClient(object):
            Returns the JSON-encoded response as real python objects.'''
         request = urllib2.Request(self.host+action)
         request.add_header('Authorization','Basic %s' % (base64.encodestring('%s:%s'%(self.apiId,self.apiPassword)).replace('\n','')))
-        response = urllib2.urlopen(request,data=AtlasClient.parse(data) if data else None)
+        response = urllib2.urlopen(request,data=BillogramClient.parse(data) if data else None)
         return json.loads(response.read())
 
     def getInvoice(self,id):
